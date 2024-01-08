@@ -53,12 +53,12 @@ public WebDriver ldriver;
     @CacheLookup
     WebElement address;
     
-    
-    
   //Add customer  create
     @FindBy(xpath="(//button[normalize-space()='Create'])[1]")
     @CacheLookup
     WebElement create;
+     
+    
 
   //Action methods
     
@@ -75,7 +75,7 @@ public WebDriver ldriver;
 
 	public void names(String name) {
 		// TODO Auto-generated method stub
-		names.sendKeys("Test");
+		names.sendKeys("sunil");
 	}
 
 	public void mobile(String mobilenumber) {
@@ -103,5 +103,7 @@ public WebDriver ldriver;
 		// TODO Auto-generated method stub
 		create.click();
 	}
+
+
 	
 }

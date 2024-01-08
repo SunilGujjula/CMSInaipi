@@ -1,4 +1,5 @@
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\CreateKBPage.java
+C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\MonthlycaseReportsPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\SettingdepartmentPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\stepDefinitions\Baseclass.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\TicketfiltersPage.java
@@ -18,6 +19,7 @@ C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\cucumberOptions\JunitT
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\SettingcomplaintPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\TickethistoryReportsPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\TicketReportsPage.java
+C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\CustomereditPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\AgentworkbalanceReportsPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\CustomerPage.java
 C:\Users\LENOVO\eclipse-workspace\CMSInaipi\src\test\java\pageObjects\KBviewPage.java

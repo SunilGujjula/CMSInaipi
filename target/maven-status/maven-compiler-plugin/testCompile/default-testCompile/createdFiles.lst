@@ -1,5 +1,6 @@
 pageObjects\SettingdepartmentPage.class
 cucumberOptions\JunitTestRunnerTest.class
+pageObjects\MonthlycaseReportsPage.class
 pageObjects\SettingscategoryPage.class
 pageObjects\AuditReportsPage.class
 pageObjects\SettingfacilityPage.class
@@ -24,4 +25,5 @@ pageObjects\SettingchannelPage.class
 pageObjects\KBviewPage.class
 pageObjects\TicketReportsPage.class
 pageObjects\DepartmentworkbalanceReportsPage.class
+pageObjects\CustomereditPage.class
 pageObjects\SettingcomplaintPage.class

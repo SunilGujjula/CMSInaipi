@@ -12,10 +12,12 @@ import pageObjects.AuditReportsPage;
 import pageObjects.ComplaintReportsPage;
 import pageObjects.CreateKBPage;
 import pageObjects.CustomerPage;
+import pageObjects.CustomereditPage;
 import pageObjects.DepartmentworkbalanceReportsPage;
 import pageObjects.KBviewPage;
 import pageObjects.LoginPage;
 import pageObjects.LogoutPage;
+import pageObjects.MonthlycaseReportsPage;
 import pageObjects.ServicecomplaintReportsPage;
 import pageObjects.SettingcallreasonPage;
 import pageObjects.SettingcasetypePage;
@@ -77,7 +79,7 @@ public class stepDefinition extends Baseclass{
 
     @Then("User have to text the customer name")
     public void user_have_to_text_the_customer_name() throws InterruptedException {
-    	Cust.names("Test");
+    	Cust.names("sunil");
         Thread.sleep(2000);
     }
 
@@ -109,6 +111,41 @@ public class stepDefinition extends Baseclass{
     public void user_have_to_click_on_apply_button() throws InterruptedException {
     	Cust.create();
         Thread.sleep(2000);
+    }
+    
+    
+//customer edit and delete
+
+    @Given("User text on customer name")
+    public void user_text_on_customer_name() throws InterruptedException {
+    	custedt=new CustomereditPage(driver);
+    	custedt.secust();
+        Thread.sleep(2000);
+    }
+
+    @When("User click on the search button")
+    public void user_click_on_the_search_button() throws InterruptedException {
+    	custedt.search();
+    	Thread.sleep(2000);
+    }
+
+
+    @And("User click on edit button")
+    public void user_click_on_edit_button() throws InterruptedException {
+    	custedt.edit();
+    	Thread.sleep(2000);
+    }
+
+    @And("User text on last name")
+    public void user_text_on_last_name() throws InterruptedException {
+    	custedt.lstname();
+    	Thread.sleep(2000);
+    }
+
+    @Then("User click on update button")
+    public void user_click_on_update_button() throws InterruptedException {
+    	custedt.update();
+    	Thread.sleep(2000);
     }
 	
   //Ticket creating 
@@ -194,13 +231,13 @@ public class stepDefinition extends Baseclass{
     public void user_click_on_ticket_functionalitys() throws InterruptedException {
     	Tkflt=new TicketfiltersPage(driver);
     	Tkflt.Ticketf(); 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
     
     @When("User select the filters")
     public void user_select_the_filters() throws InterruptedException {
     	Tkflt.Addfilters(); 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
 
     @Then("User select the from date")
@@ -449,6 +486,18 @@ public class stepDefinition extends Baseclass{
     	scmplt.setcmplt();
     	Thread.sleep(2000);
     }
+    
+    @Then("User select the facility field")
+    public void user_select_the_facility_field() throws InterruptedException {
+    	scmplt.fact();
+    	Thread.sleep(2000);
+    }
+
+    @Then("User select the department field")
+    public void user_select_the_department_field() throws InterruptedException {
+    	scmplt.depmt();
+    	Thread.sleep(2000);
+    }
 
     @Then("User click on apply button")
     public void user_click_on_apply_button1() throws InterruptedException {
@@ -456,6 +505,20 @@ public class stepDefinition extends Baseclass{
     	Thread.sleep(2000);
     }
 
+    
+//monthly case status reports
+    @Given("User click on monthly reports")
+    public void user_click_on_monthly_reports() throws InterruptedException {
+    	mntly=new MonthlycaseReportsPage(driver);
+    	mntly.mntrpts();
+    	Thread.sleep(2000);
+    }
+
+    @When("User click on Monthly Case Status reports")
+    public void user_click_on_monthly_case_status_reports() throws InterruptedException {
+    	mntly.cmptReport();
+    	Thread.sleep(2000);
+    }
     
 // Knowledge Base 
     
@@ -484,15 +547,16 @@ public class stepDefinition extends Baseclass{
     	Thread.sleep(2000);
     }
 
-    @Then("User select the category")
-    public void user_select_the_category() throws InterruptedException {
-    	KBC.KBcat();
+    @Then("User select the arrow")
+    public void user_select_the_arrow() throws InterruptedException {
+    	KBC.arrow();
     	Thread.sleep(2000);
     }
+    
 
     @Then("User select the group")
     public void user_select_the_group() throws InterruptedException {
-    	KBC.KBgrp();
+    	KBC.grp();
     	Thread.sleep(2000);
     }
 

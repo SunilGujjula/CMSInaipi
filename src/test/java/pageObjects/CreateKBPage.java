@@ -38,18 +38,18 @@ public WebDriver ldriver;
     @CacheLookup
     WebElement KBtitle;
     
-    //KBase category
-    @FindBy(xpath="//div[@class=\"mat-mdc-select-arrow ng-tns-c3539745940-19\"]")
+    //KBase arrow
+    @FindBy(xpath="//mat-select[@id=\"category_id\"]")
     @CacheLookup
-    WebElement KBcat;
+    WebElement arrow;
     
   //KBase group
-    @FindBy(xpath="(//span[normalize-space()='test 13'])[2]")
+    @FindBy(xpath="(//mat-select[@name=\"grpname\"])[1]")
     @CacheLookup
-    WebElement KBgrp;
+    WebElement grp;
 
    	//KBase description
-     @FindBy(xpath="(//body[@id='tinymce'])[1]")
+     @FindBy(xpath="//*[@id=\"tiny-angular_49647627811704364121417_ifr\"]")
      @CacheLookup
      WebElement KBdec;
      
@@ -77,13 +77,13 @@ public WebDriver ldriver;
 	public void KBtitle(String test) {
 		KBtitle.sendKeys("Test");
 	}
-
-	public void KBcat() {
-		KBcat.click();
+	
+	public void arrow() {
+		arrow.sendKeys("leave");
 	}
 
-	public void KBgrp() {
-		KBgrp.click();
+	public void grp() {
+		grp.sendKeys("casualleaves");
 	}
 
 	public void KBdec(String string) {
@@ -93,7 +93,6 @@ public WebDriver ldriver;
 	public void KBcreate() {
 		KBcreate.click();
 	}
-    
-    
+  
 
 }

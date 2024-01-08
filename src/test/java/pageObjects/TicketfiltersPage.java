@@ -24,7 +24,7 @@ public WebDriver ldriver;
     WebElement Ticketf;
     
   //click on Ticket filters
-    @FindBy(xpath="//div[normalize-space()='Filters']")
+    @FindBy(xpath="//span[normalize-space()='filter_list']")
     @CacheLookup
     WebElement Addfilters;
     

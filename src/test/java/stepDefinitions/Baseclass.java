@@ -10,10 +10,12 @@ import pageObjects.AuditReportsPage;
 import pageObjects.ComplaintReportsPage;
 import pageObjects.CreateKBPage;
 import pageObjects.CustomerPage;
+import pageObjects.CustomereditPage;
 import pageObjects.DepartmentworkbalanceReportsPage;
 import pageObjects.KBviewPage;
 import pageObjects.LoginPage;
 import pageObjects.LogoutPage;
+import pageObjects.MonthlycaseReportsPage;
 import pageObjects.ServicecomplaintReportsPage;
 import pageObjects.SettingcallreasonPage;
 import pageObjects.SettingcasetypePage;
@@ -36,6 +38,7 @@ public class Baseclass {
 	public static WebDriver driver;
 	public LoginPage log;
 	public CustomerPage Cust;
+	public CustomereditPage custedt;
 	public TicketPage AddTk;
 	public TicketfiltersPage Tkflt;
 	public TicketReportsPage Tckrpt;
@@ -46,6 +49,7 @@ public class Baseclass {
 	public DepartmentworkbalanceReportsPage Dpt;
 	public TickethistoryReportsPage Tkth;
 	public ServicecomplaintReportsPage scmplt;
+	public MonthlycaseReportsPage mntly;
 	public CreateKBPage KBC;
 	public KBviewPage KBV;
 	public SettingscategoryPage Cat;

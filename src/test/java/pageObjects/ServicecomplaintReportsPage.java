@@ -38,6 +38,17 @@ public WebDriver ldriver;
     @CacheLookup
     WebElement setcmplt;
     
+    
+  //select facility
+    @FindBy(xpath="//option[normalize-space()='Dubai']")
+    @CacheLookup
+    WebElement fact;
+
+  //select department
+    @FindBy(xpath="//option[normalize-space()='Service']")
+    @CacheLookup
+    WebElement depmt;
+ 
   //create button
     @FindBy(xpath="//button[normalize-space()='Apply']")
     @CacheLookup
@@ -65,10 +76,18 @@ public WebDriver ldriver;
 	public void setcmplt() {
 		setcmplt.click();
 	}
+	
+	public void fact() {
+		fact.click();
+	}
 
-
+	public void depmt() {
+		depmt.click();
+	}
+	
 	public void apply() {
 		apply.click();
 	}
+
 
 }

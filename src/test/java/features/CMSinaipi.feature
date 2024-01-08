@@ -18,7 +18,14 @@ Scenario: Successful add the customer details
   Then User have to text the Customer Address
   Then User have to click on apply button
   
-  
+@Customer  
+Scenario: successful edit and delete buttons
+  Given User text on customer name
+  When User click on the search button
+  And User click on edit button
+  And User text on last name
+  Then User click on update button
+
   
 #@Ticket 
 #Scenario: Successful Add Ticket details
@@ -34,7 +41,7 @@ Scenario: Successful add the customer details
   #Then User select the channel
   #Then User Text the Title
   #Then User click on create button
-  
+  #
 @Ticket 
 Scenario: Successful filters Ticket details
   Given User click on Ticket functionalitys
@@ -85,7 +92,7 @@ Scenario: Successful Sla reports details
 #Scenario: Successful Department workbalance reports details  
   #Given User click on Report functions
   #When User click on Department work balance Reports
- #
+ 
 @Reports
 Scenario: Successful Ticket history reports details  
   Given User click Report functionality
@@ -101,20 +108,26 @@ Scenario: Successful service complaint reports
   When User click on service complaint reports
   Then User click on filters button 
   And User select on january month 
+  Then User select the facility field
+  Then User select the department field
   Then User click on apply button
   
-   
+@Reports 
+Scenario: Successful Monthly Case Status Report
+  Given User click on monthly reports
+  When User click on Monthly Case Status reports 
+  
  
- #@KB
- #Scenario: Successful Add KB reports details  
-  #Given User click on Knowledgebase
-  #When User click on Create KB
-  #Then User click on Create KnowledgeBase
-  #And User Text on Title 
-  #Then User select the category
-  #And User select the group
-  #And User Text on Description
-  #Then User click on Create buttons
+@KB
+Scenario: Successful Add KB reports details  
+  Given User click on Knowledgebase
+  When User click on Create KB
+  Then User click on Create KnowledgeBase
+  And User Text on Title 
+  And User select the arrow
+  And User select the group
+  And User Text on Description
+  Then User click on Create buttons
   
 @KB
 Scenario: Successful  KB view details  
