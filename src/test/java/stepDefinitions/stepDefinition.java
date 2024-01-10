@@ -620,13 +620,13 @@ public class stepDefinition extends Baseclass{
     public void user_click_on_settings() throws InterruptedException {
     	Cat=new SettingscategoryPage(driver);
     	Cat.settings();
-    	Thread.sleep(4000);
+    	Thread.sleep(5000);
     }
 
     @When("User click on category")
     public void user_click_on_category() throws InterruptedException {
     	Cat.categoryf();
-    	Thread.sleep(2000);
+    	Thread.sleep(4000);
     }
 
     @Then("User click on Add category")
@@ -650,17 +650,17 @@ public class stepDefinition extends Baseclass{
     
 //setting group functionality
 
-    @Given("User click on setting]")
+    @Given("User click on setting")
     public void user_click_on_setting() throws InterruptedException {
     	grp=new SettinggroupPage(driver);
     	grp.setting();
-    	Thread.sleep(2000);
+    	Thread.sleep(5000);
     }
 
     @When("User click on group")
     public void user_click_on_group() throws InterruptedException {
     	grp.group();
-    	Thread.sleep(2000);
+    	Thread.sleep(4000);
     }
 
     @Then("User click on Add group")

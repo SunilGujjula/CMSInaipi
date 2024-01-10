@@ -138,23 +138,23 @@ Scenario: Successful  KB view details
   And User select the kb group
   Then User click on Apply btn
  
- #@Settings 
-  #Scenario: Successfull add the category details
-  #Given User click on settings
-  #When User click on category 
-  #Then User click on Add category
-  #And User Text on category
-  #Then User click on submits
-  #
-  #@Settings
-  #Scenario: Successfull add the group details
-  #Given User click on setting
-  #When User click on group
-  #Then User click on Add group
-  #And User select category
-  #And User text on Group
-  #Then User click on the create button
-  #
+ @Settings 
+  Scenario: Successfull add the category details
+  Given User click on settings
+  When User click on category 
+  Then User click on Add category
+  And User Text on category
+  Then User click on submits
+  
+  @Settings
+  Scenario: Successfull add the group details
+  Given User click on setting
+  When User click on group
+  Then User click on Add group
+  And User select category
+  And User text on Group
+  Then User click on the create button
+  
   #@Settings
   #Scenario: Successfull add the facility details
   #Given User click on set
@@ -204,7 +204,7 @@ Scenario: Successful  KB view details
   #Then User click on Add complaint
   #And User text on complaint
   #Then User click on submit buttons
-  
+  #
 #@Settings
 #Scenario: Successfull add the sub type complaint
   #Given User click sitting complaint sub type
